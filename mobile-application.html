@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- required meta -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- #favicon -->
+   <link rel="shortcut icon" href="assets/images/main.png" type="image/x-icon">
+   <!-- #title -->
+   <title>Mobile Application - Cybil Technologies</title>
+   <!-- #keywords -->
+   <meta name="keywords" content="creative, agency, portfolio">
+   <!-- #description -->
+   <meta name="description" content="Creative Agency Portfolio HTML5 Template">
+   <!-- ==== css dependencies start ==== -->
+   <!-- bootstrap five css -->
+   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+   <!-- glyphter css -->
+   <link rel="stylesheet" href="assets/vendor/glyyphter/css/xpovio.css">
+   <!-- font awesome six css -->
+   <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
+   <!-- nice select css -->
+   <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+   <!-- magnific popup css -->
+   <link rel="stylesheet" href="assets/vendor/magnific-popup/css/magnific-popup.css">
+   <!-- slick css -->
+   <link rel="stylesheet" href="assets/vendor/slick/css/slick.css">
+   <!-- ==== / css dependencies end ==== -->
+   <!-- main css -->
+   <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+   <div class="my-app">
+      <!-- ==== preloader start ==== -->
+      <div id="preloader">
+         <div id="loader"></div>
+      </div>
+      <!-- ==== / preloader end ==== -->
+      <a href="https://api.whatsapp.com/send?phone=3073811695" class="whatsapp">
+         <i class="fa-brands fa-whatsapp"></i>
+         <p>How can I help you?</p>
+      </a>
+      <!-- ==== mouse cursor drag start ==== -->
+      <div class="mouseCursor cursor-outer"></div>
+      <div class="mouseCursor cursor-inner">
+         <span>Drag</span>
+      </div>
+      <!-- ==== / mouse cursor drag end ==== -->
+      <!-- ==== header start ==== -->
+      <header class="header">
+         <div class="primary-navbar secondary--navbar">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <nav class="navbar p-0 justify-content-space-between">
+                        <div class="navbar__logo">
+                           <a href="index.html" aria-label="go to home">
+                              <img src="assets/images/logo.png" alt="Image">
+                           </a>
+                        </div>
+                        <div class="col goMen d-none d-md-flex align-items-center">
+                           <h4>Menu</h4>
+                           <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="navbar__options">
+                           <button class="open-offcanvas-nav d-flex" aria-label="toggle mobile menu"
+                              title="open offcanvas menu"></button>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- ==== / header end ==== -->
+      <!-- ==== offcanvas nav start ==== -->
+      <div class="offcanvas-nav">
+         <div class="offcanvas-menu">
+            <nav class="offcanvas-menu__wrapper">
+               <div class="offcanvas-menu__header nav-fade">
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="assets/images/logo.png" alt="" title="">
+                     </a>
+                  </div>
+                  <a href="javascript:void(0)" aria-label="close offcanvas menu" class="close-offcanvas-menu">
+                     <i class="fa-light fa-xmark-large"></i>
+                  </a>
+               </div>
+               <div class="offcanvas-menu__list">
+                  <div class="navbar__menu">
+                     <ul>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="index.html" aria-label="dropdown menu" class="navbar__dropdown-label">Home</a>
+                        <li class="navbar__item nav-fade">
+                           <a href="about-us.html">About Us</a>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Services</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="web-development.html">Website Design & Development</a>
+                              </li>
+                              <li>
+                                 <a href="social-media-marketing.html">Social Media Marketing</a>
+                              </li>
+                              <li>
+                                 <a href="mobile-application.html">Mobile Application</a>
+                              </li>
+                              <li>
+                                 <a href="ghost-writing.html">Ghost Writing</a>
+                              </li>
+                              <li>
+                                 <a href="branding.html">Branding</a>
+                              </li>
+                              <li>
+                                 <a href="our-services.html">See more<i class="fa-solid fa-arrow-right"></i></a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Projects</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="portfolio.html">Our Projects</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Pages</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="faq.html">FAQ</a>
+                              </li>
+                              <li>
+                                 <a href="404.html">Error</a>
+                              </li>
+                              <li>
+                                 <a href="portfolio.html">Portfolio</a>
+                              </li>
+                              <li>
+                                 <a href="client-feedback.html">Testimonials</a>
+                              </li>
+                              <li>
+                                 <a href="contact-us.html">Contact Us</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Blog</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="blog.html">Latest Blogs</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__options nav-fade">
+                  <div class="offcanvas__mobile-options d-flex">
+                     <a href="contact-us.html" class="btn btn--secondary">Let's Talk</a>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__social social nav-fade">
+                  <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook">
+                     <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.twitter.com/" target="_blank" aria-label="share us on twitter">
+                     <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.pinterest.com/" target="_blank" aria-label="share us on pinterest">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" aria-label="share us on instagram">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- ==== / header end ==== -->
+      <!-- ==== offcanvas nav start ==== -->
+      <div class="offcanvas-nav">
+         <div class="offcanvas-menu">
+            <nav class="offcanvas-menu__wrapper">
+               <div class="offcanvas-menu__header nav-fade">
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="assets/images/logo.png" alt="" title="">
+                     </a>
+                  </div>
+                  <a href="javascript:void(0)" aria-label="close offcanvas menu" class="close-offcanvas-menu">
+                     <i class="fa-light fa-xmark-large"></i>
+                  </a>
+               </div>
+               <div class="offcanvas-menu__list">
+                  <div class="navbar__menu">
+                     <ul>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Home</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="index.html">Creative Agency</a>
+                              </li>
+                              <li>
+                                 <a href="index-light.html">Creative Agency Light</a>
+                              </li>
+                              <li>
+                                 <a href="index-two.html">Digital Agency</a>
+                              </li>
+                              <li>
+                                 <a href="index-two-light.html">Digital Agency Light</a>
+                              </li>
+                              <li>
+                                 <a href="index-three.html">It Solution</a>
+                              </li>
+                              <li>
+                                 <a href="index-three-light.html">It Solution Light</a>
+                              </li>
+                              <li>
+                                 <a href="index-four.html">Personal Portfolio</a>
+                              </li>
+                              <li>
+                                 <a href="index-four-light.html">Personal Portfolio Light</a>
+                              </li>
+                              <li>
+                                 <a href="index-five.html">Interactive Portfolio</a>
+                              </li>
+                              <li>
+                                 <a href="index-five-light.html">Interactive Portfolio Light</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item nav-fade">
+                           <a href="about-us.html">About Us</a>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Services</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="our-services.html">Our Services</a>
+                              </li>
+                              <li>
+                                 <a href="service-single.html">Service Details</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Projects</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="our-projects.html">Our Projects</a>
+                              </li>
+                              <li>
+                                 <a href="project-single.html">Project Details</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Pages</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="faq.html">FAQ</a>
+                              </li>
+                              <li>
+                                 <a href="404.html">Error</a>
+                              </li>
+                              <li>
+                                 <a href="our-story.html">Our Story</a>
+                              </li>
+                              <li>
+                                 <a href="portfolio.html">Portfolio</a>
+                              </li>
+                              <li class="navbar__item navbar__item--has-children">
+                                 <a href="javascript:void(0)" aria-label="dropdown menu"
+                                    class="navbar__dropdown-label navbar__dropdown-label-sub">Team</a>
+                                 <ul class="navbar__sub-menu navbar__sub-menu__nested">
+                                    <li>
+                                       <a href="our-teams.html">Our Teams</a>
+                                    </li>
+                                    <li>
+                                       <a href="team-single.html">Team Details</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="client-feedback.html">Testimonials</a>
+                              </li>
+                              <li>
+                                 <a href="contact-us.html">Contact Us</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--has-children nav-fade">
+                           <a href="javascript:void(0)" aria-label="dropdown menu"
+                              class="navbar__dropdown-label">Blog</a>
+                           <ul class="navbar__sub-menu">
+                              <li>
+                                 <a href="blog.html">Blog</a>
+                              </li>
+                              <li>
+                                 <a href="blog-single.html">Blog Details</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__options nav-fade">
+                  <div class="offcanvas__mobile-options d-flex">
+                     <a href="contact-us.html" class="btn btn--secondary">Let's Talk</a>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__social social nav-fade">
+                  <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook">
+                     <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.twitter.com/" target="_blank" aria-label="share us on twitter">
+                     <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.pinterest.com/" target="_blank" aria-label="share us on pinterest">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" aria-label="share us on instagram">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a>
+               </div>
+            </nav>
+         </div>
+      </div> <!-- ==== / header end ==== -->
+      <div id="smooth-wrapper">
+         <div id="smooth-content">
+            <!-- ==== main start ==== -->
+            <main>
+               <!-- ==== banner start ==== -->
+               <section class="cmn-banner service-single-banner bg-img"
+                  data-background="assets/images/banner/cmn-banner-bg.png">
+                  <div class="container">
+                     <div class="row gaper align-items-center">
+                        <div class="col-12 col-lg-5 col-xl-7">
+                           <div class="text-center text-lg-start">
+                              <h2 class="title title-anim">Mobile Application</h2>
+                              <nav aria-label="breadcrumb">
+                                 <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                       <a href="index.html">
+                                          <i class="fa-solid fa-house"></i>
+                                          Home
+                                       </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                       <a href="our-services.html">
+                                          Our Services
+                                       </a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                       Mobile Application
+                                    </li>
+                                 </ol>
+                              </nav>
+                           </div>
+                        </div>
+                        <div class="col-12 col-lg-7 col-xl-5">
+                           <div class="slide-group justify-content-center justify-content-lg-end">
+                              <a href="web-development.html" aria-label="previous item" class="slide-btn ">
+                                 <i class="fa-light fa-angle-left"></i>
+                              </a>
+                              <a href="logo-design.html" aria-label="next item" class="slide-btn">
+                                 <i class="fa-light fa-angle-right"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- ==== / banner end ==== -->
+               <section class="section webService">
+                  <div class="text-center">
+                     <h4>What Can We Do</h4>
+                     <h2>CYBIL MOBILE APPLICATION DEVELOPMENT</h2>
+                     <p>Discover the power of Cybil Technologies cutting-edge SEO services. Let us help you unlock a
+                        world of possibilities as we craft <br> a strategic SEO marketing plan designed to skyrocket
+                        your visibility in the digital realm.
+                     </p>
+                     <div class="row d-flex justify-content-center align-items-center">
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser.jpg" alt="">
+                           <h3>Social Media Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser1.jpg" alt="">
+                           <h3>Health and Fitness Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser2.jpg" alt="">
+                           <h3>E-commerce Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser3.jpg" alt="">
+                           <h3>Finance Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser3.jpg" alt="">
+                           <h3>Gaming Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser3.jpg" alt="">
+                           <h3>Education Apps</h3>
+                        </div>
+                        <div class="Web-card">
+                           <img src="/assets/images/service/seo_ser3.jpg" alt="">
+                           <h3>Food and Cooking Apps</h3>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- ==== service details start ==== -->
+               <div class="mobileDes d-flex flex-column align-items-center">
+                  <h3 class="text-center mb-4">Our team works in four stages to build <br> your Mobile Application</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro, corrupti
+                     ad quae excepturi, eos soluta mollitia hic ut, sint quod voluptate dolorem voluptas unde eaque
+                     rerum ipsum minus modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque maiores
+                     accusantium iusto ullam.</p>
+                  <div class="app d-flex align-items-center mt-5 mb-5">
+                     <div class="appFirst d-flex flex-column align-items-center">
+                        <div class="appCard d-flex flex-column">
+                           <img src="/assets/images/app.png" alt="">
+                           <h4>Discovery & Planning
+                           </h4>
+                           <p>Understanding client requirements, conducting market research, and creating a detailed
+                              project plan to ensure a solid foundation for mobile app design and development.
+
+                           </p>
+                        </div>
+                        <div class="appCard d-flex flex-column">
+                           <img src="/assets/images/app.png" alt="">
+                           <h4>UI/UX Design
+
+                           </h4>
+                           <p>Crafting visually appealing and user-friendly interfaces, wireframing, and prototyping to
+                              create an intuitive and engaging user experience.
+
+                           </p>
+                        </div>
+                     </div>
+                     <img src="/assets/images/service/app.webp" alt="">
+                     <div class="appFirst d-flex flex-column align-items-center">
+                        <div class="appCard d-flex flex-column">
+                           <img src="/assets/images/app1.png" alt="">
+                           <h4>Development & Testing</h4>
+                           <p>Building the mobile application using cutting-edge technologies, coding best practices,
+                              and conducting rigorous testing to ensure functionality, performance, and security.
+                           </p>
+                        </div>
+                        <div class="appCard d-flex flex-column">
+                           <img src="/assets/images/app2.png" alt="">
+                           <h4>Deployment & Maintenance</h4>
+                           <p>Launching the mobile app on relevant app stores, providing ongoing support, updates, and
+                              maintenance to ensure optimal performance and user satisfaction.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>               
+               <!-- ==== / service details end ==== -->
+               <div class="appPromise d-flex flex-column align-items-center p-5">
+                  <h3 class="text-center">PROMISING FEATURE-RICH <br> FUNCTIONALITY</h3>
+                  <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente
+                     neque? Voluptatem optio a at fugit vel labore voluptatibus beatae quae consequuntur recusandae
+                     facere ea, sed harum consequatur sit odit deleniti perferendis officiis! Excepturi saepe
+                     perspiciatis vel amet vitae. Quos sequi optio et! Reiciendis, molestias?</p>
+                  <p class="text-center mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab quasi
+                     labore autem magnam eaque veniam neque molestiae, beatae dolorem, corrupti accusamus ea. Rem,
+                     tempore!</p>
+                  <div class="promise d-flex align-items-center mt-5">
+                     <div class="pCard d-flex flex-column align-items-center pc1">
+                        <img src="/assets/images/icons/app1.png" alt="">
+                        <h5>Offline Functionality</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="motion">
+                        <img src="/assets/images/icons/app2.png" alt="">
+                        <h5>Motion Sensors</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="AI">
+                        <img src="/assets/images/icons/app3.png" alt="">
+                        <h5>AI Solutions</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="realTime">
+                        <img src="/assets/images/icons/app4.png" alt="">
+                        <h5>Real-time Tracking</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="machine">
+                        <img src="/assets/images/icons/app5.png" alt="">
+                        <h5>Machine Learning</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="currency">
+                        <img src="/assets/images/icons/app6.png" alt="">
+                        <h5>Multi-Currency</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Multilinguality">
+                        <img src="/assets/images/icons/app7.png" alt="">
+                        <h5>Multilinguality</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Live">
+                        <img src="/assets/images/icons/app8.png" alt="">
+                        <h5>Live Streaming</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="face">
+                        <img src="/assets/images/icons/app9.png" alt="">
+                        <h5>Face Detection</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="google">
+                        <img src="/assets/images/icons/app10.png" alt="">
+                        <h5>Google Indoor-Maps</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Dark">
+                        <img src="/assets/images/icons/app11.png" alt="">
+                        <h5>Dark Mode</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Emoji">
+                        <img src="/assets/images/icons/app12.png" alt="">
+                        <h5>Emoji</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Payment">
+                        <img src="/assets/images/icons/app13.png" alt="">
+                        <h5>Payment Gateway</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="code">
+                        <img src="/assets/images/icons/app14.png" alt="">
+                        <h5>QR/Barcode Scanner</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="voice">
+                        <img src="/assets/images/icons/app15.png" alt="">
+                        <h5>Voice Search</h5>
+                     </div>
+                     <div class="pCard d-flex flex-column align-items-center" id="Chatbot">
+                        <img src="/assets/images/icons/app16.png" alt="">
+                        <h5>Chatbot</h5>
+                     </div>
+                  </div>
+               </div>
+               <!-- ==== ux process start ==== -->
+               <section class="section ux-process bg-tertiary fade-wrapper">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                           <div class="section__header text-center">
+                              <span class="sub-title">
+                                 FAQ
+                                 <i class="fa-solid fa-arrow-right"></i>
+                              </span>
+                              <h2 class="title title-anim">FREQUENTLY ASKED QUESTIONS</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-12">
+                           <div class="service-f-wrapper">
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>Why Should we use Cybil Technologies over another agency?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>Can You build apps for both IOS and Android?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>Will I own the source code?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>How long will it take to build and launch my app?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>Do you build web application too?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                              <div class="service-f-single fade-top">
+                                 <div class="single-item">
+                                    <div class="intro-btn">
+                                       <h4>Can you deliver my project more quickly?</h4>
+                                    </div>
+                                 </div>
+                                 <div class="single-item p-single p-sm body-cn">
+                                    <p>To deliver the best experience, we thoroughly research and evaluate your product
+                                       and its users to create a strategic foundation for the brand.</p>
+                                 </div>
+                                 <button class="toggle-service-f"></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- ==== / ux process end ==== -->
+               <!-- ==== cta start ==== -->
+               <section class="cta-two section">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-12 col-xxl-11">
+                           <div class="cta-two-wrapper bg-img" data-background="assets/images/cta-two-bg.png">
+                              <div class="row gaper align-items-center">
+                                 <div class="col-12 col-lg-8">
+                                    <div class="cta-two__content">
+                                       <span>Hello !</span>
+                                       <h2 class="title-anim">
+                                          ready to work with us?
+                                       </h2>
+                                       <h5>
+                                          <a href="tel:+13073811695">call: +13073811695</a>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-lg-4">
+                                    <div class="text-start text-lg-end">
+                                       <a href="contact-us.html" class="btn btn--tertiary">
+                                          start a project
+                                          <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="contactForm pt-3">
+                  <form action="" class="d-flex flex-column align-items-center">
+                     <h4>Let’s Connect</h4>
+                     <h3 class="text-dark text-center mt-2"><b>Talk To Us & Tell Us About Your Plans, We Are Excited To
+                           <br>Help You!</b></h3>
+
+                     <h5 class="text-dark mt-4 text-center">Contact Us and Get Onboard with Cybil Technologies Today!
+                     </h5>
+                     <div class="inputs d-flex align-items-center mt-4">
+                        <div class="userInp">
+                           <div class="inpFields">
+                              <div class="inp alignFe">
+                                 <input type="text" name="name" id="name" placeholder="Name" onkeydown="nameValidate()"
+                                    required>
+                                 <p class="error" id="nameError">Error</p>
+                              </div>
+                              <div class="inp alignFe">
+                                 <input type="text" name="website" id="website" placeholder="Enter Website"
+                                    onkeydown="webValidate()" required>
+                                 <p class="error" id="websiteError">Error</p>
+                              </div>
+                           </div>
+                           <div class="inpFields">
+                              <div class="inp">
+                                 <input type="email" name="email" id="email" placeholder="Email"
+                                    onkeydown="emailValidate()" required>
+                                 <p class="error" id="emailError">Error</p>
+                              </div>
+                              <div class="inp">
+                                 <input type="text" name="company" id="company" placeholder="Enter Company"
+                                    onkeydown="compValidate()" required>
+                                 <p class="error" id="companyError">Error</p>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="inp align-items-center">
+                           <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="inp" id="submit">
+                           <input type="submit" value="Submit">
+                        </div>
+                     </div>
+                  </form>
+               </section>
+               <!-- ==== / cta end ==== -->
+            </main>
+            <!-- ==== / main end ==== -->
+            <!-- ==== footer start ==== -->
+            <footer class="footer section pb-0" data-background="assets/images/footer/footer-bg.png">
+               <div class="container">
+                  <div class="row gaper">
+                     <div class="col-12 col-lg-5 col-xl-6">
+                        <div class="footer__single"> <a href="index.html" class="logo"> <img
+                                 src="assets/images/logo.jpeg" alt="Image"> </a>
+                           <div class="footer__single-meta"> <a
+                                 href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                                 target="_blank"> <i class="fa-sharp fa-solid fa-location-dot"></i> 30 N Gould St Ste R,
+                                 Sheridan, WY 82801 </a> <a href="tel:406-555-0120"> <i
+                                    class="fa-sharp fa-solid fa-phone-volume"></i> +13073811695 </a> <a
+                                 href="mailto:info@cybiltechnologies.com"> <i class="fa-sharp fa-solid fa-envelope"></i>
+                                 info@cybiltechnologies.com </a> </div>
+                           <div class="footer__cta text-start"> <a href="contact-us.html"
+                                 class="btn btn--secondary">book a call now</a> </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-lg-2 col-xl-2">
+                        <div class="footer__single">
+                           <div class="footer__single-intro">
+                              <h5>discover</h5>
+                           </div>
+                           <div class="footer__single-content">
+                              <ul>
+                                 <li>
+                                    <a href="about-us.html">About Us</a>
+                                 </li>
+                                 <li>
+                                    <a href="our-services.html">Services</a>
+                                 </li>
+                                 <li>
+                                    <a href="blog.html">Latest Blogs</a>
+                                 </li>
+                                 <li>
+                                    <a href="contact-us.html">Contact Us</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-lg-5 col-xl-4">
+                        <div class="footer__single">
+                           <div class="footer__single-intro">
+                              <h5>Subscribe our newsletter</h5>
+                           </div>
+                           <div class="footer__single-content">
+                              <p>Welcome to our digital agency We specialize in helping business most like yours succeed
+                                 online.</p>
+                              <div class="footer__single-form">
+                                 <form action="#" method="post">
+                                    <div class="input-email"> <input type="email" name="subscribe-news"
+                                          id="subscribeNews" placeholder="Enter Your Email" required> <button
+                                          type="submit" class="subscribe"> <i
+                                             class="fa-sharp fa-solid fa-paper-plane"></i> </button> </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="footer__copyright">
+                           <div class="row align-items-center gaper">
+                              <div class="col-12 col-lg-8">
+                                 <div class="footer__copyright-text text-center text-lg-start">
+                                    <p> &copy; <span id="copyYear"></span> – All Rights Reserved. <a href="index.html"
+                                          target="_blank">Cybil Technologies </p>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                 <div class="social justify-content-center justify-content-lg-end"> <a
+                                       href="https://www.facebook.com/" target="_blank"> <i
+                                          class="fa-brands fa-facebook-f"></i> </a> <a href="https://www.twitter.com/"
+                                       target="_blank"> <i class="fa-brands fa-twitter"></i> </a> <a
+                                       href="https://www.pinterest.com/" target="_blank"> <i
+                                          class="fa-brands fa-linkedin-in"></i> </a> <a
+                                       href="https://www.instagram.com/" target="_blank"> <i
+                                          class="fa-brands fa-instagram"></i> </a> </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- ==== / footer end ==== -->
+         </div>
+      </div>
+      <!-- ==== scroll to top start ==== -->
+      <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+         <span></span>
+         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+         </svg>
+      </button>
+      <!-- ==== / scroll to top end ==== -->
+   </div>
+   <!-- ==== js dependencies start ==== -->
+   <!-- jquery -->
+   <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+   <!-- bootstrap five js -->
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!-- nice select js -->
+   <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+   <!-- magnific popup js -->
+   <script src="assets/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+   <!-- slick js -->
+   <script src="assets/vendor/slick/js/slick.min.js"></script>
+   <!-- image loaded js -->
+   <script src="assets/vendor/images-loaded/imagesloaded.pkgd.min.js"></script>
+   <!-- isotope js -->
+   <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+   <!-- chroma js -->
+   <script src="assets/vendor/gsap/chroma.min.js"></script>
+   <!-- splittext js -->
+   <script src="assets/vendor/gsap/SplitText.min.js"></script>
+   <!-- scrollsmoother js -->
+   <script src="assets/vendor/gsap/ScrollSmoother.min.js"></script>
+   <!-- scrollto js -->
+   <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+   <!-- scrolltrigger js -->
+   <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+   <!-- gsap js -->
+   <script src="assets/vendor/gsap/gsap.min.js"></script>
+   <!-- vanilla tilt js -->
+   <script src="assets/vendor/vanilla-tilt/tilt.jquery.js"></script>
+   <!-- ==== / js dependencies end ==== -->
+   <!-- plugins js -->
+   <script src="assets/js/plugins.js"></script>
+   <!-- main js -->
+   <script src="assets/js/main.js"></script>
+   <script src="/assets/js/form.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
