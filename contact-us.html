@@ -313,15 +313,15 @@
                                  <div class="col-12 col-lg-6">
                                     <div class="contact-main__form  fade-top">
                                        <h3>Leave A Message</h3>
-                                       <form action="#" method="post" class="section__content-cta">
+                                       <form class="section__content-cta">
                                           <div class="group-wrapper">
                                              <div class="group-input ">
                                                 <input type="text" name="contact-name" id="contactName"
-                                                   placeholder="Name">
+                                                   placeholder="Name" required>
                                              </div>
                                              <div class="group-input ">
                                                 <input type="email" name="contact-email" id="contactEmail"
-                                                   placeholder="Email">
+                                                   placeholder="Email" required>
                                              </div>
                                           </div>
                                           <div class="group-input ">
@@ -329,15 +329,20 @@
                                                 <option data-display="Subject">
                                                    Subject
                                                 </option>
-                                                <option value="1">Account</option>
-                                                <option value="2">Service</option>
-                                                <option value="3">Pricing</option>
-                                                <option value="4">Support</option>
+                                                <option value="1">Website Design & Development</option>
+                                                <option value="2">Logo design</option>
+                                                <option value="3">Social Media Marketing</option>
+                                                <option value="4">SEO</option>
+                                                <option value="5">Out Sourcing Services</option>
+                                                <option value="6">Ghostwriting</option>
+                                                <option value="7">Branding</option>
+                                                <option value="8">Mobile Application</option>
+                                                <option value="9">Content Marketing</option>
                                              </select>
                                           </div>
                                           <div class="group-input ">
-                                             <textarea name="contact-message" id="contactMessage"
-                                                placeholder="Message"></textarea>
+                                             <textarea name="contact-message" id="contactMessage" placeholder="Message"
+                                                required></textarea>
                                           </div>
                                           <div class="form-cta justify-content-start">
                                              <button type="submit" class="btn btn--primary">
@@ -488,7 +493,53 @@
    <!-- plugins js -->
    <script src="assets/js/plugins.js"></script>
    <!-- main js -->
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="assets/js/main.js"></script>
+
+   <script>
+
+      let sendMail = () => {
+         let uname = document.querySelector("#contactName").value;
+         let uemail = document.querySelector("#contactEmail").value;
+         let umsg = document.querySelector("#contactMessage").value;
+
+         let Emessage = `
+      Name: ${uname}
+      <br>
+      Email: ${uemail}
+      <br>
+      Msg: ${umsg}
+   `;
+
+         Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "shayanalam8931@gmail.com", // Replace with your Elastic Email username
+            Password: "BD4F4CE3D7BB48019BEF1169120E7EE7054E", // Replace with your Elastic Email password
+            To: 'shayanalam8931@gmail.com', // Replace with your recipient email
+            From: "shayanalam8931@gmail.com", // Replace with your Elastic Email username
+            Subject: "Contact Page Form",
+            Body: Emessage,
+         }).then(
+            message => {
+               if (message == "OK") {
+                  Swal.fire({
+                     title: "Submit",
+                     text: "Your form has been submitted. We will contact you as soon as possible.",
+                     icon: "success",
+                  });
+               }
+            }
+         );
+      }
+
+      document.querySelector("form").addEventListener("submit", (e) => {
+         e.preventDefault();
+         sendMail();
+      });
+
+
+   </script>
 </body>
 
 </html>
