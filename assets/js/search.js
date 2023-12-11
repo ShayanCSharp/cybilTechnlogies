@@ -16,8 +16,8 @@ let main = document.querySelector(".blogSearch ul");
 let search = document.querySelector("#blogSearch");
 
 const displayData = (filterData) => {
-    main.innerHTML = filterData.map(product=>{
-       return `
+  main.innerHTML = filterData.map((product) => {
+    return `
         <li>
             <a href="${product.link}">
                 <img src="${product.img}" alt="">
@@ -26,17 +26,18 @@ const displayData = (filterData) => {
                 </div>
             </a>
         </li>
-        `
-    })
+        `;
+  });
 };
 
-search.addEventListener("keyup",(e)=>{
-    const val = e.target.value.toLowerCase();
+search.addEventListener("keyup", (e) => {
+  const val = e.target.value.toLowerCase();
 
-    if(val){
-        displayData(data.filter(item=>item.title.toLowerCase().indexOf(val) !== -1));
-    }
-    else{
-        main.innerHTML = "";
-    }
-})
+  if (val) {
+    displayData(
+      data.filter((item) => item.title.toLowerCase().indexOf(val) !== -1)
+    );
+  } else {
+    main.innerHTML = "";
+  }
+});

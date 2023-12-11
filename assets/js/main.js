@@ -376,34 +376,3 @@
     }
   });
 })(jQuery);
-
-let Subscribe = () => {
-  let Emessage = document.querySelector("#subscribeNews").value;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "shayanalam8931@gmail.com",
-    Password: "BD4F4CE3D7BB48019BEF1169120E7EE7054E",
-    To: "shayanalam8931@gmail.com",
-    From: "shayanalam8931@gmail.com",
-    Subject: "Subscribed",
-    Body: Emessage,
-  }).then((message) => {
-    if (message == "OK") {
-      Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Subscribe",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    }
-    else{
-      alert('msg');
-    }
-  });
-};
-
-document.querySelector(".footer__single-form form").addEventListener("submit",e=>{
-  e.preventDefault();
-  Subscribe();
-})

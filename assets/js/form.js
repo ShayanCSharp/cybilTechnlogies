@@ -33,6 +33,12 @@ let sendMail = () => {
                text: "Your form has been submitted. We will contact you as soon as possible.",
                icon: "success",
             });            
+         }else{
+            Swal.fire({
+               title: "Error",
+               text: "There is a error. Try again.",
+               icon: "error",
+            });            
          }
        }
     );
@@ -43,7 +49,7 @@ let sendMail = () => {
  let nameValidate = () => {
     let name = document.querySelector("#name");
     let nameError = document.querySelector("#nameError");
-    let nameRegex = /^[A-Za-z]{2,}$/;
+    let nameRegex = /^[A-Za-z ]{2,}$/;
 
     if (!nameRegex.test(name.value)) {
        name.style.outlineColor = "#ff0000";
