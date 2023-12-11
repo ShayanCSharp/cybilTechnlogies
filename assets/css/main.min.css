@@ -68,6 +68,119 @@ body {
   box-sizing: border-box;
 }
 
+/* Blog search  */
+
+.blogSearch{
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.blogSearch ul{
+  color: #000;
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+
+.blogSearch ul li a{
+  display: flex;
+  padding: 0.7rem 0.6rem;
+  background-color: #fff;
+  transition: all 0.6s;
+}
+
+.blogSearch ul li a:hover{
+  background-color: #e6e2e2;
+}
+
+.blogSearch ul li a img{
+  width: 3.5rem;
+  object-fit: cover;
+}
+
+.blogSearch ul li a .searchRes{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.blogSearch ul li a .searchRes h5{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #000;
+}
+
+/* Comment section  */
+
+.commentSec {
+  gap: 1rem;
+}
+
+.comMain{
+  gap: 1rem;
+}
+
+.comment {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: unset;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+}
+
+.comment img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comDes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 100%;
+}
+
+.comDes h4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.comDes h4 span {
+  margin-right: 1rem;
+}
+
+.comDes h4 span {
+  font-size: 0.9rem;
+}
+.comDes p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .comment{
+    padding: 0.4rem;
+    flex-direction: column;
+  }
+
+  .comDes h4{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comDes p{
+    text-align: center;
+  }
+}
+
 /* Classes  */
 
 .showMore {
@@ -136,21 +249,21 @@ body {
   }
 }
 
-.showCase h4{
+.showCase h4 {
   color: var(--primary-color);
 }
 
-#showWork{
+#showWork {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portShow{
+.portShow {
   width: 100%;
   justify-content: space-between;
 }
 
-.portShow .content{
+.portShow .content {
   padding: 0;
 }
 
@@ -182,60 +295,60 @@ body {
   transition: top 4s;
 }
 
-.screen .out2{
-	top: -0;
-	width: 100%;
-	height: auto;
-	position: absolute;
-	z-index: 0;
-  margin:0;
-  padding:0;
-	-webkit-transition: top 1s;
-	-moz-transition: top 4s;
-	-ms-transition: top 4s;
-	-o-transition: top 4s;
-	transition: bottom 4s;
+.screen .out2 {
+  top: -0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: top 1s;
+  -moz-transition: top 4s;
+  -ms-transition: top 4s;
+  -o-transition: top 4s;
+  transition: bottom 4s;
 }
 
-.screen .out2:hover{
+.screen .out2:hover {
   top: -320px;
 }
 
 .screen .lay3 {
-	top: 0;
-	width: 100%;
-	height: auto;
-	position: absolute;
-	z-index: 0;
-  margin:0;
-  padding:0;
-	-webkit-transition: top 4s;
-	-moz-transition: top 11s;
-	-ms-transition: top 11s;
-	-o-transition: top 11s;
-	transition: bottom 11s;
+  top: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: top 4s;
+  -moz-transition: top 11s;
+  -ms-transition: top 11s;
+  -o-transition: top 11s;
+  transition: bottom 11s;
 }
 
-.screen .lay3:hover{
+.screen .lay3:hover {
   top: -510px;
 }
 
 .screen .lay4 {
-	top: 0;
-	width: 100%;
-	height: auto;
-	position: absolute;
-	z-index: 0;
-  margin:0;
-  padding:0;
-	-webkit-transition: top 11s;
-	-moz-transition: top 11s;
-	-ms-transition: top 11s;
-	-o-transition: top 11s;
-	transition: bottom 11s;
+  top: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: top 11s;
+  -moz-transition: top 11s;
+  -ms-transition: top 11s;
+  -o-transition: top 11s;
+  transition: bottom 11s;
 }
 
-.screen .lay4:hover{
+.screen .lay4:hover {
   top: -145px;
 }
 
@@ -249,14 +362,14 @@ body {
 }
 
 @media (max-width: 1200px) {
-  #showWork{
+  #showWork {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
   }
 
-  #showWork .content{
+  #showWork .content {
     width: 100%;
     padding: 0 !important;
   }
@@ -8351,81 +8464,81 @@ i {
 }
 
 @media (max-width: 500px) {
-  .blog-main .blog-main__single .thumb .thumb-link a img{
-    height: 200px;
-  }
-  
-  .blog-details .bd-thumb img{
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 200px;
   }
 
-  .portRes .col-12 .portfolio-m__single .thumb{
+  .blog-details .bd-thumb img {
+    height: 200px;
+  }
+
+  .portRes .col-12 .portfolio-m__single .thumb {
     height: 100%;
   }
 
-  .portRes .col-12 .portfolio-m__single .thumb a{
+  .portRes .col-12 .portfolio-m__single .thumb a {
     height: 100%;
   }
 
-  .portfolio-m .portfolio-m__single .thumb a img{
+  .portfolio-m .portfolio-m__single .thumb a img {
     object-fit: contain;
   }
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
-  .blog-main .blog-main__single .thumb .thumb-link a img{
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 300px;
   }
-  .blog-details .bd-thumb img{
+  .blog-details .bd-thumb img {
     height: 300px;
   }
 
-  .portRes .col-12 .portfolio-m__single .thumb{
+  .portRes .col-12 .portfolio-m__single .thumb {
     height: 100%;
   }
 
-  .portRes .col-12 .portfolio-m__single .thumb a{
+  .portRes .col-12 .portfolio-m__single .thumb a {
     height: 100%;
   }
 }
 
 @media (min-width: 801px) and (max-width: 1000px) {
-  .blog-main .blog-main__single .thumb .thumb-link a img{
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 400px;
   }
-  
-  .blog-details .bd-thumb img{
+
+  .blog-details .bd-thumb img {
     height: 400px;
   }
 }
 
 @media (min-width: 1001px) and (max-width: 1400px) {
-  .blog-main .blog-main__single .thumb .thumb-link a img{
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 500px;
   }
-  
-  .blog-details .bd-thumb img{
+
+  .blog-details .bd-thumb img {
     height: 500px;
   }
 }
 
 @media (min-width: 1401px) and (max-width: 1800px) {
-  .blog-main .blog-main__single .thumb .thumb-link a img{
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 600px;
   }
-  
-  .blog-details .bd-thumb img{
+
+  .blog-details .bd-thumb img {
     height: 600px;
   }
 }
 
-@media (min-width: 1801px){
-  .blog-main .blog-main__single .thumb .thumb-link a img{
+@media (min-width: 1801px) {
+  .blog-main .blog-main__single .thumb .thumb-link a img {
     height: 500px;
     object-fit: cover;
   }
-  
-  .blog-details .bd-thumb img{
+
+  .blog-details .bd-thumb img {
     height: 500px;
   }
 }
