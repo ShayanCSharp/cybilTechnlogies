@@ -1,12 +1,12 @@
 const data = [
   {
-    img: "assets/images/blog/3750605.jpg",
+    img: "assets/images/blog/blog2.webp",
     title:
       "USING ANIMATED SOCIAL MEDIA MARKETING VIDEOS FOR BETTER CONTENT & ADS",
     link: "Social_Media_Video_Animation_Blog.html",
   },
   {
-    img: "https://img.freepik.com/free-vector/marketing-graphic-designer-showing-design-project_3446-700.jpg?w=740&t=st=1702240933~exp=1702241533~hmac=837d83b0a8e957442569c9dee1304c1e3790c9647865927d77b376fe599923b3",
+    img: "assets/images/blog/blog1.webp",
     title: "TOP 8 WHITEBOARD ANIMATION VIDEO TIPS IN 2024",
     link: "Top 8 Whiteboard Animation Video Tips.html",
   },

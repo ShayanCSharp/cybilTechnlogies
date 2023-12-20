@@ -1,3 +1,15 @@
+var Tawk_API = Tawk_API || {},
+  Tawk_LoadStart = new Date();
+(function () {
+  var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = "https://embed.tawk.to/657f94f207843602b8030f27/1hht5rl7d";
+  s1.charset = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  s0.parentNode.insertBefore(s1, s0);
+})();
+
 /* ==============
  ========= js documentation ==========================
 
@@ -376,3 +388,41 @@
     }
   });
 })(jQuery);
+
+let sendMailFooter = () => {
+  let email = document.querySelector("#subscribeNews").value;
+
+  let Emessage = `
+  <b>Email:</b> ${email}
+`;
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "shayanalam8931@gmail.com",
+    Password: "BD4F4CE3D7BB48019BEF1169120E7EE7054E",
+    To: "shayanalam8931@gmail.com",
+    From: "shayanalam8931@gmail.com",
+    Subject: "Subscribe",
+    Body: Emessage,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Submit",
+        text: "Subscribe.",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "There is an error. Try again.",
+        icon: "error",
+      });
+    }
+  });
+};
+
+document
+  .querySelector(".footer__single-form form")
+  .addEventListener("submit", (e) => {
+    e.preventDefault();
+    sendMailFooter();
+  });
